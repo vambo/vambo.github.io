@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Full stack developer, currently residing in Estonia. I've mostly worked with Java, Javascript, PHP.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[vpoldra@gmail.com](mailto:vpoldra@gmail.com)
