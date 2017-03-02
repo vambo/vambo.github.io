@@ -3,7 +3,7 @@ layout: post
 title: Monitoring outbound connections
 ---
 
-I wanted to verify that certain code is in fact opening outbound connections. Netstat was the first thing to came to mind, and certainly if you know how to use it, it's up to almost any job. I did face some hurdles though:
+I wanted to verify that certain code is in fact opening outbound connections. Netstat was the first thing to come to mind, and certainly if you know how to use it, it's up to almost any job. I did face some hurdles though:
 
 #### Having an active OpenVPN tunnel
 
