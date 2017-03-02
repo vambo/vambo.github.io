@@ -52,13 +52,14 @@ The output looks like this:
 ```
 NetHogs version 0.8.1
 
-    PID USER     PROGRAM                      DEV        SENT      RECEIVED       
-   3480 vambo    ..slack/slack --disable-gpu  eth0       0.091       0.080 KB/sec
-   3756 vambo    ..s/InvoiceService.php#L205  eth0       0.080       0.080 KB/sec
-   3079 vambo    skype                        eth0       0.000       0.000 KB/sec
-      ? root     unknown TCP                             0.000       0.000 KB/sec
+    PID USER     PROGRAM                                   DEV        SENT      RECEIVED       
+   3480 vambo    /usr/lib/slack/slack --disable-gpu        eth0       0.071       1.345 KB/sec
+   2249 www-data /usr/sbin/apache2                         eth0       0.000       0.000 KB/sec
+      ? root     192.168.1.110:52438-194.242.109.182:443              0.000       0.000 KB/sec
+   3079 vambo    skype                                     eth0       0.000       0.000 KB/sec
+      ? root     unknown TCP                                          0.000       0.000 KB/sec
 
-  TOTAL                                                  0.171       0.161 KB/sec 
+  TOTAL                                                               0.174       1.473 KB/sec
 ```
 
 
