@@ -24,7 +24,7 @@ vambo@vambo-ZBook:~$ netstat -tc | grep '194'
 tcp        0      0 vambo-ZBook.lan:50708   host-194-242-109-:https TIME_WAIT 
 ```
 
-I am sure displaying only the 3 first bytes of the IP prefixed by 'host-' make sense for someone, but as of now that someone ain't me.
+I am sure displaying only the 3 first bytes of the IP prefixed by 'host-' makes sense for someone, but as of now that someone ain't me.
 
 #### What works
 
