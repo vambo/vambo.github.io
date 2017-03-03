@@ -3,7 +3,7 @@ layout: post
 title: Monitoring outbound connections
 ---
 
-I wanted to verify that certain code is in fact opening outbound connections. Netstat was the first thing to came to mind, and certainly if you know how to use it, it's up to almost any job. I did face some hurdles though:
+I wanted to verify that certain code is in fact opening outbound connections. Netstat was the first thing to come to mind, and certainly if you know how to use it, it's up to almost any task. I did face some hurdles though:
 
 #### Having an active OpenVPN tunnel
 
@@ -17,18 +17,18 @@ while opening the connection and verifying through other means (described below)
 
 #### Netstat host resolving
 
-After closing the VPN connection, I could spot what I was looking for, though searching either by full IP or hostname wouldn't have worked.
+After closing the VPN connection, I could spot what I was looking for, though searching either by full IP or hostname wouldn't have worked:
 
 ```
 $ netstat -tc | grep '194'
 tcp        0      0 vambo-ZBook.lan:50708   host-194-242-109-:https TIME_WAIT 
 ```
 
-I am sure displaying only the 3 first bytes of the IP prefixed by 'host-' make sense for someone, but as of now that someone ain't me.
+I am sure displaying only the first 3 bytes of the IP prefixed by 'host-' and separated by dashes makes sense for someone, but as of now that someone ain't me.
 
 #### What works
 
-Luckily, to disable the reverse DNS lookup, there is a '-t' flag available.
+Luckily, to disable the reverse DNS lookup, there is a `-n` flag available.
 
 ```
 $ netstat -ntc | grep '194.242.109.182'
@@ -37,7 +37,7 @@ tcp        0      0 192.168.1.110:49844     194.242.109.182:443     TIME_WAIT
 
 Voila!
 
-Just for the record, the other flags are -t for TCP traffic, and -c for continuous polling.
+Just for the record, the other flags are `-t` for TCP traffic, and `-c` for continuous polling.
 
 #### An easier path
 
