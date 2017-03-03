@@ -10,7 +10,7 @@ I wanted to verify that certain code is in fact opening outbound connections. Ne
 The connection I was searching for just didn't exist. I logged everything to a file using 
 
 ```
-netstat -c >> netlog
+$ netstat -c >> netlog
 ```
 
 while opening the connection and verifying through other means (described below) that it was open, but nothing. A mystery to be solved another day..
@@ -20,7 +20,7 @@ while opening the connection and verifying through other means (described below)
 After closing the VPN connection, I could spot what I was looking for, though searching either by full IP or hostname wouldn't have worked.
 
 ```
-vambo@vambo-ZBook:~$ netstat -tc | grep '194'
+$ netstat -tc | grep '194'
 tcp        0      0 vambo-ZBook.lan:50708   host-194-242-109-:https TIME_WAIT 
 ```
 
@@ -31,7 +31,7 @@ I am sure displaying only the 3 first bytes of the IP prefixed by 'host-' make s
 Luckily, to disable the reverse DNS lookup, there is a '-t' flag available.
 
 ```
-vambo@vambo-ZBook:~$ netstat -ntc | grep '194.242.109.182'
+$ netstat -ntc | grep '194.242.109.182'
 tcp        0      0 192.168.1.110:49844     194.242.109.182:443     TIME_WAIT  
 ```
 
