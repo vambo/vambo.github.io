@@ -19,7 +19,7 @@ Luckily, the next time you reboot, it is possible to select recovery mode from G
 
 After entering the password, selecting 'resume normal boot' from the recovery menu will take you to the login screen, like nothing ever happened..until next time.
 
-### Slightly better workaround
+#### A Slightly better workaround
 
 Since doing that every time is slightly annoying and time-consuming, it is more convenient to update /etc/default/grub and remove "splash" from the following line:
 
