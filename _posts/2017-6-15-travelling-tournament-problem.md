@@ -18,7 +18,15 @@ Thankfully, there's a book called [A Guide to Graph Colouring: Algorithms and Ap
 
 <img src="/images/posts/2017-6-15/canonical-schedule.png">
 
-The downside is that it's not entirely correct (which I notified the author of). I found that out again not due to great mathematical intuition, but by comparing the results of my implementation against the ones in the book, identifying a pattern in the differences, and tracing that back to a certain part of the algorithm.
+The downside is that it's not entirely correct (which I notified the author of). 
+
+Namely, line 9 should read:
+
+```
+if j is odd then..
+```
+
+I found that out again not due to great mathematical intuition, but by comparing the results of my implementation against the ones in the book, identifying a pattern in the differences, and tracing that back to a certain part of the algorithm.
 
 [Here](https://bitbucket.org/snippets/vambo/XLKb7/roundrobin) is a Java implementation of the corrected pseudocode.
 
