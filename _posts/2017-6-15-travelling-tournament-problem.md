@@ -12,7 +12,7 @@ The first thing to come to mind is the [Round robin tournament system](https://e
 
 Still, there's something unsatisfactory about using hard-coded tables and thus being limited to a few specific tournament sizes.
 
-Some googling turns up [papers](http://repository.cmu.edu/cgi/viewcontent.cgi?article=1512&context=tepper) on the topic which go into graph theory and mention canonical 1-factorization as a solution. However, if one is not a mathematician and time is of the essence, transforming the formulas to an algorithm can be a fair amount of work.
+Some googling turns up [papers](http://repository.cmu.edu/cgi/viewcontent.cgi?article=1512&context=tepper) on the topic which go into graph theory and mention canonical 1-factorization as a solution. However, if one is not a mathematician and time is of the essence, transforming the formulas to an algorithm can prove difficult.
 
 Thankfully, there's a book called [A Guide to Graph Colouring: Algorithms and Applications](http://www.springer.com/gp/book/9783319257280) which includes the following pseudocode:
 
