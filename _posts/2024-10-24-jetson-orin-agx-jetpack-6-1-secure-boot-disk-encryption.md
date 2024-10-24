@@ -3,7 +3,7 @@ layout: post
 title: Configuring NVidia Jetson Orin AGX to securely boot Jetpack 6.1 from an encrypted NVMe drive
 ---
 
-Perusing the NVidia forums for this information is quite time consuming so I thought this might come in handy for others. Also, you might just make a small mistake and spend the next day looking for it, much like [I did](https://forums.developer.nvidia.com/t/disk-encryption-on-jetson-orin-nano-without-secure-boot-or-uefi-secure-boot/301201).
+Perusing the NVidia forums for this information is quite time consuming so I thought this might come in handy for others. Also, you might just make a small mistake and spend the next day looking for it, much like [I did](https://forums.developer.nvidia.com/t/uefi-secureboot-and-disk-encryption-in-36-4/310592/6).
 
 When I was halfway through doing this for Jetpack 5.1.2 I was very lucky to run into [this post by Chris](https://medium.com/@monoclechris/secureboot-and-encrypted-rootfs-nvme-on-jetson-orin-41d3356d7922). When you're fine using the Ubuntu 20-based Jetpack 5 then that post is all you need.
 
