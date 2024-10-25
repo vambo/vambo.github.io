@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Full stack developer, currently residing in Estonia. I've mostly worked with Java, Javascript, PHP.
+Full stack developer, currently residing in Estonia. I've worked with Java, Javascript, PHP, Ruby and lately Python.
 
 ### Contact me
 
